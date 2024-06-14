@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+//go:generate npm install
 //go:generate ng build
 
 const assetsDir = "project/browser"
