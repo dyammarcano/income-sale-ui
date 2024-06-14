@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+//go:generate npm install -g @angular/cli
 //go:generate ng build
 
 func init() {
