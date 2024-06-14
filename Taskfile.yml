@@ -8,5 +8,10 @@ tasks:
       - ng serve
 
   run-api:
+    deps: [build-ui]
     cmds:
       - go run main.go
+
+  build-ui:
+    cmds:
+      - ng build
