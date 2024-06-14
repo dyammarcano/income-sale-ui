@@ -3,15 +3,20 @@
 version: '3'
 
 tasks:
-  run-ui:
-    cmds:
-      - ng serve
+    run-ui:
+        cmds:
+            - ng serve
 
-  run-api:
-    deps: [build-ui]
-    cmds:
-      - go run main.go
+    run-api:
+        deps: [ build-ui ]
+        cmds:
+            - go run main.go
 
-  build-ui:
-    cmds:
-      - ng build
+    build-ui:
+        cmds:
+            - ng build
+
+    build-api:
+        deps: [ build-ui ]
+        cmds:
+            - go build -o bin/api main.go
