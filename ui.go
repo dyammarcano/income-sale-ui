@@ -1,10 +1,12 @@
-package assets
+package ui
 
 import (
 	"embed"
 	"fmt"
 	"strings"
 )
+
+//go:generate ng build
 
 const assetsDir = "project/browser"
 
